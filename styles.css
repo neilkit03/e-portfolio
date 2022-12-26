@@ -44,58 +44,16 @@
   font-size: 50px;
 }
 
-/* loader */
-
-.loader {
-  position: relative;
-  width: 120px;
-  height: 120px;
-}
-
-.loader span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: rotate(calc(18deg * var(--i)));
-}
-
-.loader span::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #00ff0a;
-  box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a,
-    0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
-  animation: animate34 2s linear infinite;
-  animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes animate34 {
-  0% {
-    transform: scale(1);
-  }
-
-  80%,
-  100% {
-    transform: scale(0);
-  }
-}
 body,
 html {
   margin: 0;
-  height: 100%;
+  width: 100;
   background-color: #001233;
 }
 
 .navbar {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 10px;
+  padding-right: 5px;
   background-color: #001233;
 }
 
@@ -159,50 +117,6 @@ h3 {
   font-family: "Courier Prime", monospace;
   font-weight: 600;
 }
-
-/* .wrapper {
-  padding: 5px;
-  max-width: 960px;
-  width: 95%;
-  margin: 20px auto;
-}
-
-.columns {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 5px 0;
-}
-
-.column {
-  flex: 1;
-  border: none;
-  margin: 2px;
-  padding: 2px;
-  background: none;
-  transition: 0.3s;
-}
-
-.column:first-child {
-  margin-left: 0;
-  background: none;
-}
-
-.column:last-child {
-  margin-left: 0;
-  background: none;
-}
-
-@media screen and (max-width: 980px) {
-  .columns .column {
-    margin-bottom: 5px;
-    flex-basis: 40%;
-  }
-  .columns .column :last-child {
-    flex-basis: 100%;
-    margin: 0;
-  }
-} */
 
 .heroBG {
   display: flex;
@@ -461,4 +375,53 @@ span:nth-child(34) {
 
 .mystory {
   font-size: 20px;
+}
+
+.thirdspace {
+  height: 150px;
+}
+
+@media (max-width: 576px) {
+  .navbar-toggler {
+    display: inline;
+    padding-left: 20rem;
+    margin-left: 5rem;
+  }
+
+  .fade-in {
+    display: flex;
+    align-items: center;
+    margin-top: 15rem;
+    margin-left: 14rem;
+  }
+
+  .heroBG {
+    margin-left: 7rem;
+  }
+
+  .hero-text1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sub-hero-text2 {
+    margin-top: 6.5rem;
+  }
+
+  .NameHeadline {
+    justify-content: center;
+  }
+
+  .aboutmePhotoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  .aboutmeBox {
+    margin-left: 1px;
+  }
+  .myphotobox {
+    justify-content: center;
+  }
 }

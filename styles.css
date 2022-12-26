@@ -62,6 +62,10 @@ html {
   padding: 14px 25px;
 }
 
+.fa-solid {
+  font-size: 23px;
+}
+
 .resumeDL:link,
 .resumeDL:visited {
   background-color: rgb(244, 67, 54, 25%);
@@ -381,47 +385,95 @@ span:nth-child(34) {
   height: 150px;
 }
 
-@media (max-width: 576px) {
-  .navbar-toggler {
-    display: inline;
-    padding-left: 20rem;
-    margin-left: 5rem;
-  }
+.contact {
+  color: #cac0b3;
+}
 
-  .fade-in {
-    display: flex;
-    align-items: center;
-    margin-top: 15rem;
-    margin-left: 14rem;
-  }
+.fa-brands,
+.fa-regular {
+  margin: 1rem;
+  font-size: 48px;
+}
 
-  .heroBG {
-    margin-left: 7rem;
-  }
+.email-Link {
+  color: #cac0b3;
+}
 
-  .hero-text1 {
-    display: flex;
-    justify-content: center;
-  }
+.email {
+  font-size: 30px;
+}
 
-  .sub-hero-text2 {
-    margin-top: 6.5rem;
-  }
+h4 {
+  text-align: center;
+  color: #cac0b3;
+  font-family: "Courier Prime", monospace;
+}
 
-  .NameHeadline {
-    justify-content: center;
-  }
+/* Icon Animation */
 
-  .aboutmePhotoBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 100px;
+@keyframes fa-brands {
+  16.65% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
-  .aboutmeBox {
-    margin-left: 1px;
+  33.3% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
   }
-  .myphotobox {
-    justify-content: center;
+  49.95% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
   }
+  66.6% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fa-brands {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-brands:hover,
+.fa-brands:focus,
+.fa-brands:active {
+  -webkit-animation-name: fa-brands;
+  animation-name: fa-brands;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  color: #f44336;
+}
+
+.spacebeforefooter {
+  height: 20rem;
+}
+
+.footerBy {
+  font-size: 18px;
+  color: #cac0b3;
+}
+
+.footerLink {
+  text-decoration: none;
+  font-size: 18px;
+  color: #cac0b3;
 }
